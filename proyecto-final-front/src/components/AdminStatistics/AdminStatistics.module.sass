@@ -1,0 +1,48 @@
+@use '../../Styles/Mixins'
+@import '../../Styles/Mixins'
+
+.background
+    width: 100%
+    height: fit-content
+    display: flex
+    justify-content: center
+    align-items: center
+
+.dashboardWrapper
+    width: 80%
+    height: fit-content
+    display: flex
+    flex-wrap: wrap
+    gap: 20px
+    margin: 30px 0px
+
+.container
+    width: 49%
+    height: 340px
+    margin-bottom: 5%   
+
+.containerR
+    width: 49%
+    height: 340px
+    margin-bottom: 5%   
+
+.containerG
+    width: 49%
+    height: 530px
+    padding-inline: auto
+    @include Mixins.boxShadowCard
+
+.mostSearch
+    margin: 5px 0px
+    text-align: left
+    @include Mixins.font($secondaryColor, 18px, normal, normal)
+    
+.loading
+    position: absolute
+    width: 100%
+    height: 980px
+    background-color: #ffffff
+    z-index: 10 
+    
+.loadingIcon    
+    margin-top: 200px    

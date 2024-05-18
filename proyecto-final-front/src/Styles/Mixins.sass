@@ -1,0 +1,144 @@
+@import './Variables'
+@import url('https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap')
+
+@mixin flexbox($direction, $justify, $align)
+    display: flex
+    flex-direction: $direction
+    justify-content: $justify
+    align-items: $align
+
+@mixin margin-padding()
+    margin: 0
+    padding: 0
+
+@mixin font($color, $font-size, $font-weight, $font-style)
+    font-family: 'K2D', sans-serif
+    font-size: $font-size
+    font-weight: $font-weight
+    font-style: $font-style
+    color: $color
+
+@mixin buttonActive
+    background-color: $primaryColor
+    font-family: 'K2D', sans-serif
+    font-size: 18px
+    font-weight: normal
+    font-style: normal
+    color: white
+    padding: 8px 20px
+    border-radius: 10px
+    border: none
+    outline: none
+    cursor: pointer
+    transition: .2s
+
+@mixin buttonHover
+    background-color: $hoverColor
+    transform: scale(1.02)
+
+@mixin buttonPressed
+    transform: scale(0.95)
+    background-color: $alertColor
+
+@mixin alert
+    background-color: $alertColor
+    padding: 3px 20px
+    border-radius: 10px
+
+@mixin boxShadowCard
+    border: 1px solid rgba(128, 128, 128, 0.3)
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05)
+    background-color: white
+    border-radius: 10px
+
+@mixin textGrey($text-align, $text-decoration)
+    font-family: 'K2D', sans-serif
+    font-size: 22px
+    font-weight: normal
+    font-style: normal
+    color: $textSecondaryColor
+    text-align: $text-align
+    text-decoration: $text-decoration
+
+@mixin textTitle($text-align, $text-decoration)
+    font-family: 'K2D', sans-serif
+    font-size: 45px
+    font-weight: bold
+    font-style: normal
+    color: $primaryColor
+    text-align: $text-align
+    text-decoration: $text-decoration
+
+@mixin textSubTitle($text-align, $text-decoration)
+    font-family: 'K2D', sans-serif
+    font-size: 25px
+    font-weight: bold
+    font-style: normal
+    color: $secondaryColor
+    text-align: $text-align
+    text-decoration: $text-decoration
+
+@mixin textDetail($text-align, $text-decoration)
+    font-family: 'K2D', sans-serif
+    font-size: 20px
+    font-weight: normal
+    font-style: normal
+    color: $tertiaryColor
+    text-align: $text-align
+    text-decoration: $text-decoration
+
+@mixin inputsFormat
+    height: 40px
+    width: 100%
+    padding: 0px 15px
+    font-family: 'K2D', sans-serif
+    font-size: 16px
+    font-style: normal
+    font-weight: normal
+    color: $secondaryColor
+    box-sizing: border-box
+    border: 2px solid $secondaryColor
+    border-radius: 10px
+    transition: .2s
+
+@mixin inputsFormat_Hover
+    outline: none
+    border: 2px solid $alertColor
+    transform: scale(1.02)
+
+@mixin inputsFormat_Placeholder
+    font-family: 'K2D', sans-serif
+    font-size: 16px
+    font-style: italic
+    font-weight: normal
+    color: #969696
+
+@mixin errorMessage
+    margin: 5px 0px
+    padding-left: 15px
+    text-align: left
+    @include font($textFailureColor, 14px, normal, normal)
+
+@mixin buttonSuccess
+    background-color: $textSuccessColor
+    padding: 10px 20px
+    border: none
+    border-radius: 10px
+    transition: .2s
+    @include font(white, 18px, normal, normal)
+
+@mixin buttonFailure
+    background-color: $textFailureColor
+    padding: 10px 20px
+    border: none
+    border-radius: 10px
+    transition: .2s
+    @include font(white, 18px, normal, normal)
+
+@mixin buttonTables($background-color)
+    background-color: $background-color
+    padding: 5px 10px
+    border: none
+    border-radius: 7.5px
+    transition: .2s
+    @include font(white, 12px, normal, normal)

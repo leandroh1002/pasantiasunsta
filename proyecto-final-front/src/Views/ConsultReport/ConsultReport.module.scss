@@ -1,0 +1,12 @@
+@use '../../Styles/Mixins.sass' as *;
+@import '../../Styles/Variables.sass';
+
+.container {
+  @include flexbox(column, center, center);
+  width: 100%;
+}
+
+.textTitle {
+  margin: 30px 0px 10px 0px;
+  @include font($primaryColor, 25px, bold, normal);
+}

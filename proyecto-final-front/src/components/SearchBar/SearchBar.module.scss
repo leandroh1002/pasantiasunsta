@@ -1,0 +1,49 @@
+@use '../../Styles/Mixins.sass' as *;
+@import '../../Styles/Variables.sass';
+
+.container{
+    width: 70%;
+    height: fit-content;
+    @include flexbox(row, center, center);
+}
+
+;
+
+.container_form {
+    width: 100%;
+    height: fit-content;
+    @include flexbox(row, center, center);
+    gap: 10px;
+
+    input{
+        width: 100%;
+        @include inputsFormat
+    };
+    input:focus{
+        @include inputsFormat_Hover
+    };
+    input::placeholder{
+        @include inputsFormat_Placeholder
+    }
+
+    button {
+        @include buttonActive;
+    }
+
+    ;
+
+    button:hover {
+        @include buttonHover;
+    }
+
+    ;
+
+    button:active {
+        @include buttonPressed;
+    }
+
+    ;
+
+}
+
+;

@@ -1,0 +1,90 @@
+@use '../../Styles/Mixins'
+@import '../../Styles/Variables'
+
+.wrapper
+    display: flex
+    width: 100%
+    height: fit-content
+    flex-direction: row
+    @include Mixins.boxShadowCard
+    cursor: pointer
+    padding: 15px 20px
+    box-sizing: border-box
+
+.profileWrapper
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+.profileImage
+    border: 1px solid rgba(128, 128, 128, 0.3)
+    border-radius: 50%
+    width: 130px
+    height: 130px
+    object-fit: cover
+
+.ratingWrapper
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+    margin-top: 5px
+
+.iconStar
+    width: 30px
+    height: 30px
+    background-image: url('../../assets/Icons/IconStar.png')
+    background-position: center
+    background-repeat: no-repeat
+    background-size: contain
+
+.textRating
+    margin: 0px
+    @include Mixins.font($textSecondaryColor, 14px, normal, normal)
+
+.infoWrapper
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    margin: 0px 20px
+
+.headerWrapper
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.textTitle
+    width: fit-content
+    text-align: left
+    @include Mixins.font($primaryColor, 24px, bold, normal)
+    margin: 0
+
+.textGrey
+    line-height:15px
+    text-align: left
+    @include Mixins.font($grey, 16px, normal, italic)
+    margin: 0
+
+.textPrice
+    text-align: left
+    @include Mixins.font($tertiaryColor, 20px, bold, normal)
+    margin: 0 5px
+
+.textDark
+    margin: 8px 0px
+    @include Mixins.font($tertiaryColor, 18px, bold, normal)
+
+.servicesWrapper
+    display: flex
+    flex-wrap: wrap
+    gap: 5px 10px
+
+.textServices
+    margin: 0
+    padding: 0 10px
+    border-radius: 10px
+    border: 1px solid $primaryColor
+    @include Mixins.font($primaryColor, 16px, normal, normal)
