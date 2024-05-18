@@ -1,10 +1,10 @@
-# Proyecto de Plataforma de Servicios de Asistencia a la Tercera Edad
+# Proyecto de Pasantias para la Universidad del Norte Santo Tomas de Aquino
 
 ## Objetivo
-Desarrollar y lanzar una plataforma que conecte a proveedores de servicios de asistencia a la tercera edad con clientes, proporcionando una experiencia transparente y eficiente.
+Desarrollar y lanzar una plataforma donde los alumnos puedan ver y postularse a las pasantias presentadas por la universidad.
 
 ## Metodología
-Aplicaremos metodologías ágiles, comenzando con el desarrollo de la parte del proveedor para conectar con el backend en la primera semana. Posteriormente, nos enfocaremos en los clientes y la administración del sistema, y finalmente, dedicaremos tiempo a mejoras y funcionalidades adicionales.
+Aplicaremos metodologías ágiles, comenzando con el desarrollo de la parte del alumno para conectar con el backend en la primera semana. Posteriormente, nos enfocaremos en la administración del sistema, y finalmente, dedicaremos tiempo a mejoras y funcionalidades adicionales.
 
 ## Cronograma
 
@@ -13,8 +13,6 @@ Aplicaremos metodologías ágiles, comenzando con el desarrollo de la parte del 
   - Configurar el entorno de desarrollo y realizar un despliegue inicial.
 - **Autenticación de Terceros (Firebase):**
   - Integrar la autenticación de terceros en el registro e inicio de sesión.
-- **Pasarela de Pagos:**
-  - Implementar la pasarela de pagos para suscripciones.
 
 ### Semana 2: Desarrollo Continuado - Parte del Proveedor
 - **Perfil del Proveedor:**
@@ -55,28 +53,18 @@ Aplicaremos metodologías ágiles, comenzando con el desarrollo de la parte del 
 ## Estado Final Deseado
 Una plataforma robusta y eficiente con perfiles profesionales verificados, valoraciones transparentes y una comunicación fluida entre proveedores y clientes. El despliegue final será un logro estratégico, marcando el éxito de la misión y la conquista de un terreno valioso en el mercado de servicios de asistencia a la tercera edad.
 
-## Roles del Equipo
-- **Desarrolladores JS:** Lean, Ricardo, Ale, Pablo
-- **Desarrollador Node:** Tiago, Diego, Freydder, Manu
-- **Diseñadores:** Ale, Ricardo
 
 ## User Stories
 Consulta las historias de usuario en el documento principal.
 
 ## Diagramas
-- [Diagrama de Ishikawa por Tareas](diagrama)https://excalidraw.com/#json=CmkBgjPuhRWBZhHkQxwxh,IPFnvm2xryDtuhl8HLdGew
-- [Diagrama Base de Datos](diagrama)https://dbdiagram.io/d/Proyecto-Final-Primer-boceto-65ab3dd0ac844320ae52cdc2
+- [Diagrama de Ishikawa por Tareas](diagrama)
+- [Diagrama Base de Datos](diagrama)
 
 ## Instrucciones para Implementación
 1. Clona este repositorio.
 2. Instala las dependencias usando `npm install`.
 3. Ejecuta el servidor de desarrollo con `npm run dev`.
 
-
-## 💰 You can help us by Donating
-
-<br/>
- 
-  [![BuyMeACoffee](https://img.buymeacoffee.com/button-api/?text=Buymeacoffee&emoji=&slug=codingstella&button_colour=FFDD00&font_colour=000000&font_family=Comic&outline_colour=000000&coffee_colour=ffffff)](https://www.buymeacoffee.com/pablobesler)
 
 
