@@ -16,7 +16,6 @@ import {
   GET_REPORTS,
   CREATE_REPORT,
   GET_FAQS,
-  GET_ALL_PAYMENTS,
   PUT_STATE,
   DELETE_FAQS,
   GET_COMMENTS_USERS,
@@ -31,8 +30,6 @@ let initialState = {
 
   //ADMIN
   peopleForAdmin: [],
-  paymentsHistory: [],
-
   //HOME
   getAllPeople: [],
   paginacionData: [],
@@ -116,12 +113,6 @@ const rootReducer = (state = initialState, { type, payload }) => {
       return {
         ...state,
         peopleForAdmin: payload,
-      };
-
-    case GET_ALL_PAYMENTS:
-      return {
-        ...state,
-        paymentsHistory: payload,
       };
 
     case GET_HOME_PROVIDER:

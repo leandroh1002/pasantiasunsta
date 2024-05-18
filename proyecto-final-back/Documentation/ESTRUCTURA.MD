@@ -33,11 +33,6 @@
     │   │   ├── getOpportunities.controller.js
     │   │   ├── postOpportunities.controller.js
     │   │   └── putOpportunities.controller.js
-    │   ├── payments
-    │   │   ├── paidMemberships.controller.js
-    │   │   ├── payment.controller.js
-    │   │   ├── receiveWebhook.controller.js
-    │   │   └── updatePaidMemberships.controller.js
     │   ├── people
     │   │   ├── getPeople.controller.js
     │   │   ├── postPeople.controller.js
@@ -69,7 +64,6 @@
     │   ├── categories_options.js
     │   ├── chats.js
     │   ├── opportunities.js
-    │   ├── payments.js
     │   ├── people.js
     │   ├── people_logins.js
     │   ├── people_options.js
@@ -80,7 +74,6 @@
     │   ├── geolocation.route.js
     │   ├── index.js
     │   ├── opportunities.route.js
-    │   ├── payments.route.js
     │   ├── people.route.js
     │   ├── questions.route.js
     │   ├── sendMail.route.js
@@ -106,9 +99,6 @@
     │   │   ├── getOpportunities.service.js
     │   │   ├── postOpportunities.services.js
     │   │   └── putOpportunities.services.js
-    │   ├── payments
-    │   │   ├── paidMemberships.service.js
-    │   │   └── updatePaidMemberships.service.js
     │   ├── people
     │   │   ├── checkUnverified.js
     │   │   ├── getPeople.service.js

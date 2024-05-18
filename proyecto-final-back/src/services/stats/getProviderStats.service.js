@@ -6,7 +6,6 @@ const {
     Categories_options,
     People_logins,
     Opportunities,
-    Payments,
 } = require("../../db.js");
 
 const { STATE_VIEW, STATE_COMPLETED, STATE_RATINGPROVIDERPENDING, STATE_ACCEPTED, STATE_RATINGCUSTOMERPENDING, STATE_RATINGPENDING, USER_CUSTOMER, USER_PROVIDER } = require("../../constants/index.js");

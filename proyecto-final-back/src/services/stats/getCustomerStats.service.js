@@ -5,7 +5,6 @@ const {
     Categories_options,
     People_logins,
     Opportunities,
-    Payments,
 } = require("../../db.js");
 
 const getCustomerStatsService = async () => {

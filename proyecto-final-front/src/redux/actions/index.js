@@ -18,7 +18,6 @@ import {
   GET_FAQS,
   GET_PEOPLE,
   GET_REPORTS,
-  GET_ALL_PAYMENTS,
   GET_COMMENTS_USERS,
 } from "./action-types";
 
@@ -159,29 +158,6 @@ const allPeopleProvider = (query) => {
       Swal.fire({
         title: `${error}`,
         text: "Error al obtener allPeopleProvider",
-        icon: 'warning',
-        confirmButtonText: 'Aceptar'
-      });
-    }
-  };
-};
-
-const allPayments = (query) => {
-  return async (dispatch) => {
-    try {
-      const response = await axios.get(
-        `${REACT_APP_API_URL}/paidMemberships${query}`
-      );
-      if (response.status === 200) {
-        return dispatch({
-          type: GET_ALL_PAYMENTS,
-          payload: response.data.data,
-        });
-      }
-    } catch (error) {
-      Swal.fire({
-        title: `${error}`,
-        text: "Error al obtener allPayments",
         icon: 'warning',
         confirmButtonText: 'Aceptar'
       });
@@ -635,7 +611,6 @@ export {
   createFAQs,
   getFAQs,
   postUserInteres,
-  allPayments,
   putState,
   putStateProvider,
   putFAQs,

@@ -19,7 +19,6 @@ export const CREATE_REPORT = 'CREATE_REPORT';
 export const GET_PEOPLE = 'GET_PEOPLE';
 export const CREATE_FAQS = 'CREATE_FAQS';
 export const GET_FAQS = 'GET_FAQS';
-export const GET_ALL_PAYMENTS = 'GET_ALL_PAYMENTS';
 export const PUT_STATE = 'PUT_STATE';
 export const PUT_FAQS = 'PUT_FAQS';
 export const DELETE_FAQS = 'DELETE_FAQS';

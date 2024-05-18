@@ -1,4 +1,4 @@
-const { People, People_logins, Payments } = require('../../db');
+const { People, People_logins } = require('../../db');
 const { v4: uuidv4 } = require('uuid');
 const { getPeopleService } = require('./getPeople.service');
 const { PEOPLE_STATE_ACTIVE, PEOPLE_STATE_UNVERIFIED } = require('../../constants');
@@ -70,16 +70,6 @@ const postPeopleService = async (params) => {
                 loginDate: currentDate,
             });
 
-            const payment = await Payments.create({
-                idPayment: uuidv4(),
-                idPeople: params.idPeople,
-                emisionDate: params.emisionDate,
-                dueDate: params.paymentDay,
-                paymentDay: params.paymentDay,
-                methodOfPayment: params.methodOfPayment,
-                price: params.price,
-                responseApi: params.responseApi
-            });
         }
         if(created){
             sendMailService(email,'Bienvenido!',`${fullName}, bienvenido a Care With Love, por favor complete sus datos ingresando en  https://carewithlove.onrender.com`)

@@ -42,7 +42,7 @@ sequelize.models = Object.fromEntries(capsEntries);
 
 // En sequelize.models están todos los modelos importados como propiedades
 // Para relacionarlos hacemos un destructuring
-const { Categories_options, Categories, People_logins, People_options, People, Opportunities, Chats, Payments } = sequelize.models;
+const { Categories_options, Categories, People_logins, People_options, People, Opportunities, Chats } = sequelize.models;
 
 // Relaciones
 People.belongsToMany(Categories_options,
@@ -69,11 +69,6 @@ People_options.belongsTo(Categories_options, {
     foreignKey: 'idOption',
 });
 
-// People.hasOne(Categories_options, {
-//   foreignKey: 'idGenre'
-// })
-
-
 Categories.hasMany(Categories_options, {
     foreignKey: 'idCategorie'
 })
@@ -83,14 +78,6 @@ Categories_options.belongsTo(Categories, {
 })
 
 People.hasMany(People_logins, {
-    foreignKey: 'idPeople'
-})
-
-People.hasMany(Payments, {
-    foreignKey: 'idPeople'
-})
-
-Payments.belongsTo(People, {
     foreignKey: 'idPeople'
 })
 
